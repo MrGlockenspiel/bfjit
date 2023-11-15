@@ -17,11 +17,6 @@ typedef struct program_s {
   opcode_t *bytecode;
 } program_t;
 
-typedef struct executable_s {
-  u64 size;
-  void *bytecode;
-} executable_t;
-
 void push_ins(u8 *memory, u64 *index, i32 count, ...);
 void push_u32(u8 *memory, u64 *index, u32 value);
 void push_u64(u8 *memory, u64 *index, u64 value);
