@@ -197,7 +197,7 @@ void bf_compile(const program_t *program) {
       break;
     case ',':
       for (u64 i = 0; i < opcode.count; i++) {
-        asm_syscall_read(fn_memory, &fn_index);
+        asm_getchar(fn_memory, &fn_index);
       }
       break;
     case '[':

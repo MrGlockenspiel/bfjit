@@ -39,7 +39,7 @@ void asm_mov_r13_qword(u8 *memory, u64 *index, u64 val);
 void asm_mov_r13_arg1(u8 *memory, u64 *index);
 
 void asm_putchar(u8 *memory, u64 *index);
-void asm_syscall_read(u8 *memory, u64 *index);
+void asm_getchar(u8 *memory, u64 *index);
 
 void asm_cmp_byte_r13(u8 *memory, u64 *index, u8 value);
 
