@@ -5,16 +5,16 @@
 #include "types.h"
 
 typedef struct opcode_s {
-  char op;
-  union {
-    u64 count;
-    u64 jmp_addr;
-  };
+    char op;
+    union {
+        u64 count;
+        u64 jmp_addr;
+    };
 } opcode_t;
 
 typedef struct program_s {
-  u64 size;
-  opcode_t *bytecode;
+    u64 size;
+    opcode_t *bytecode;
 } program_t;
 
 void push_ins(u8 *memory, u64 *index, i32 count, ...);
